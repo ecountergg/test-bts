@@ -7,6 +7,7 @@ This repository just satisfying my soul for build apps with tailwind and vue js 
 - [Vue Router](https://router.vuejs.org/)
 - [Vuex](https://vuex.vuejs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Cypress](https://www.cypress.io/)
 
 ## Features
 To Be Added :blush:
