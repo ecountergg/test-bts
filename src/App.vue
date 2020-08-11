@@ -40,4 +40,8 @@ export default {
 </script>
 <style>
 @import "css/tailwind.css";
+
+body {
+    font-family: century gothic;
+}
 </style>
