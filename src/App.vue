@@ -1,6 +1,6 @@
 <template>
   <div class="leading-normal tracking-normal" id="main-body">
-    <div class="flex flex-wrap">
+    <!-- <div class="flex flex-wrap">
 
       <Sidebar />
 
@@ -8,34 +8,34 @@
 
         <Navbar />
 
-        <div class="p-6 bg-gray-100 mb-20">
+        <div class="p-6 bg-gray-100 mb-20"> -->
           <router-view />
-        </div>
+        <!-- </div>
 
         <Footer />
 
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex';
 
-import Sidebar from '@/components/layout//Sidebar.vue'
-import Navbar from '@/components/layout//Navbar.vue'
-import Footer from '@/components/layout/Footer.vue'
+// import Sidebar from '@/components/layout//Sidebar.vue'
+// import Navbar from '@/components/layout//Navbar.vue'
+// import Footer from '@/components/layout/Footer.vue'
 
 export default {
   name: 'App',
   computed: {
     ...mapState(['sideBarOpen'])
   },
-  components: {
-    Sidebar,
-    Navbar,
-    Footer,
-  },
+//   components: {
+//     Sidebar,
+//     Navbar,
+//     Footer,
+//   },
 };
 </script>
 <style>

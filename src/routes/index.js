@@ -4,7 +4,9 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 /* Layout */
-import Layout from '@/components/layout/Index.vue'
+import Register from '@/components/Register.vue'
+import Login from '@/components/Login.vue'
+import Backend from '@/components/Backend.vue'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -36,7 +38,20 @@ export const constantRoutes = [
     // Home pages or Dashboard
     {
       path: '',
-      component: Layout,
+      name: 'register',
+      component: Register,
+      hidden: true,
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login,
+      hidden: true,
+    },
+    {
+      path: '/backend',
+      name: 'backend',
+      component: Backend,
       hidden: true,
     },
 ]
