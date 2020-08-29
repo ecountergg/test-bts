@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import authenticationRoutes from './modules/authenticationRoutes'
+import dashboardRoutes from './modules/dashboardRoutes'
 
 Vue.use(Router)
-
-/* Layout */
-import Layout from '@/components/layout/Index.vue'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -32,14 +31,6 @@ import Layout from '@/components/layout/Index.vue'
  * a base page that does not have permission requirements
  * all roles can be accessed
  */
-export const constantRoutes = [
-    // Home pages or Dashboard
-    {
-      path: '',
-      component: Layout,
-      hidden: true,
-    },
-]
 
 /**
  * asyncRoutes
@@ -58,7 +49,10 @@ export const constantRoutes = [
 
 const createRouter = () => new Router({
   // mode: 'history', // require service support
-  routes: constantRoutes,
+  routes: [
+        ...authenticationRoutes,
+        ...dashboardRoutes,
+    ],
   mode: 'history'
 })
 
