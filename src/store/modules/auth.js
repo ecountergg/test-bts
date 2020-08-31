@@ -1,5 +1,7 @@
+import { getToken } from '@/utils/auth';
+
 const state = {
-    token: '',
+    token: getToken(),
 };
 
 const getters = {

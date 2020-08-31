@@ -78,8 +78,8 @@ export default {
                 const token = response.data.data.token;
                 if(token) {
                     this.$store.commit('SET_TOKEN', token);
+                    localStorage.token = token;
                     this.$router.push("dashboard").catch(()=>{});
-
                 }
             })
             .catch(error => {
