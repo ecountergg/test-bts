@@ -96,7 +96,9 @@ import { mapState } from 'vuex';
 export default {
     name: 'Sidebar',
     computed: {
-        ...mapState(['sideBarOpen'])
+        ...mapState({
+            sideBarOpen: state => state.dashboard.sideBarOpen,
+        }),
     }
 }
 </script>

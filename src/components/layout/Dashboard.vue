@@ -34,7 +34,9 @@ export default {
         Footer,
     },
     computed: {
-        ...mapState(['sideBarOpen'])
+        ...mapState({
+            sideBarOpen: state => state.dashboard.sideBarOpen,
+        }),
     },
 }
 </script>
