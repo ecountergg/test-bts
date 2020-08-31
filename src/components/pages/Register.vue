@@ -104,7 +104,7 @@ export default {
         register() {
             axios.post(`${process.env.VUE_APP_BASE_API_URL}register`, this.form)
             .then(()=> {
-                this.error.valid = false;
+                this.removeForm();
             })
             .catch(error => {
                 this.error.message = error.response.data.errorMessage;
@@ -112,7 +112,12 @@ export default {
         },
         removeError() {
             this.error.message = '';
-        }
+        },
+        removeForm() {
+            this.form.email = '';
+            this.form.username = '';
+            this.form.password = '';
+        },
     },
 }
 </script>
