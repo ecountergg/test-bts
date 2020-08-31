@@ -10,7 +10,7 @@
                 <div
                     class="
                         w-full bg-white border text-blue-400 rounded-lg
-                        flex items-center p-6 mb-6 xl:mb-0 shadow-lg box-info
+                        flex items-center p-6 mb-6 xl:mb-0 shadow-lg min-h-150
                     "
                     >
                     <svg class="w-16 h-16 fill-current mr-4 hidden lg:block" viewBox="0 0 20 20">
@@ -26,7 +26,7 @@
             <div class="w-1/2 xl:w-1/4 px-3">
                 <div class="
                         w-full bg-white border text-blue-400 rounded-lg
-                        flex items-center p-6 mb-6 xl:mb-0 shadow-lg box-info
+                        flex items-center p-6 mb-6 xl:mb-0 shadow-lg min-h-150
                     "
                 >
                     <svg class="w-16 h-16 fill-current mr-4 hidden lg:block" viewBox="0 0 20 20">
@@ -43,7 +43,7 @@
             <div class="w-1/2 xl:w-1/4 px-3">
                 <div class="
                         w-full bg-white border text-blue-400 rounded-lg
-                        flex items-center p-6 mb-6 xl:mb-0 shadow-lg box-info
+                        flex items-center p-6 mb-6 xl:mb-0 shadow-lg min-h-150
                     "
                 >
                     <svg class="w-16 h-16 fill-current mr-4 hidden lg:block" viewBox="0 0 20 20">
@@ -60,7 +60,7 @@
             <div class="w-1/2 xl:w-1/4 px-3">
                 <div class="
                         w-full bg-white border text-blue-400 rounded-lg
-                        flex items-center p-6 mb-6 xl:mb-0 shadow-lg box-info
+                        flex items-center p-6 mb-6 xl:mb-0 shadow-lg min-h-150
                     "
                 >
                     <svg class="w-16 h-16 fill-current mr-4 hidden lg:block" viewBox="0 0 20 20">
@@ -82,8 +82,3 @@ export default {
     name: 'Index',
 }
 </script>
-<style scoped>
-.box-info {
-    min-height: 150px;
-}
-</style>

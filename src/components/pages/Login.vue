@@ -78,7 +78,8 @@ export default {
                 const token = response.data.data.token;
                 if(token) {
                     this.$store.commit('SET_TOKEN', token);
-                    this.$router.push({ path: 'dashboard' })
+                    this.$router.push("dashboard/index").catch(()=>{});
+
                 }
             })
             .catch(error => {
